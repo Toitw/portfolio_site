@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+.logo {
+    color: white;
+    font-family: 'bakbak one', sans-serif;
+    font-size: 2rem;
+}
+
+.menu {
+    filter: invert(1);
+}
+
+/* Hero call */
+.hero-call {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.top-hero-call-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-call img {
+    width: 50%;
+    height: auto;
+}
+
+.hero-call h1 {
+    font-family: 'bakbak one', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 50px;
+}
+
+.hero-call .hero-sub-text {
+    font-size: 1.2rem;
+    color: grey;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.hero-call button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Main */
+#main {
+    background-color: grey;
+    padding: 50px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.project p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.project button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
