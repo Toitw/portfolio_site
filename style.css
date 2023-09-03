@@ -36,22 +36,20 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 15px 0 15px;
+    padding: 0 20px 0 20px;
 }
 
 .top-hero-call-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 30px;
 }
 
 .hero-call img {
     width: 100%;
     height: auto;
-    padding-left: 10px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Add a 5px blurred border effect */
 }
 
@@ -73,7 +71,12 @@ header img {
 }
 
 .hero-text {
-    padding-top: 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.highlight {
+    color: yellow;
 }
 
 .hero-call button {
