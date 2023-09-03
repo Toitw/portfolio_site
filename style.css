@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 header img {
@@ -24,6 +24,8 @@ header img {
 }
 
 .menu {
+    width: 30px;
+    height: auto;
     filter: invert(1);
 }
 
@@ -34,7 +36,7 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 0 15px 0 15px;
 }
 
 .top-hero-call-container {
@@ -43,25 +45,36 @@ header img {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    gap: 30px;
 }
 
 .hero-call img {
-    width: 50%;
+    width: 100%;
     height: auto;
+    padding-left: 10px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Add a 5px blurred border effect */
 }
 
 .hero-call h1 {
     font-family: 'bakbak one', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: white;
-    margin-left: 50px;
 }
 
 .hero-call .hero-sub-text {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: grey;
     margin-top: 20px;
-    margin-left: 50px;
+    text-align: center;
+}
+
+.portrait {
+    width: 100%;
+}
+
+.hero-text {
+    padding-top: 15px;
 }
 
 .hero-call button {
@@ -69,14 +82,55 @@ header img {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 20px 0;
+    width: 50%;
+    text-decoration: none;
+}
+
+.contact-button {
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.hero-call button:hover {
+    cursor: pointer;
 }
 
 /* Main */
 #main {
     background-color: grey;
     padding: 50px;
+}
+
+.section-divisor-1 {
+    padding: 20px;
+    background-color: #f3f3f3;
+    height: 60px;
+}
+
+.section-divisor-1-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.section-divisor-1-container img {
+    width: 50px;
+    height: auto;
+}
+
+/* Project section */
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .project {
@@ -87,7 +141,7 @@ header img {
 }
 
 .project img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
