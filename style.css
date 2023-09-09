@@ -135,7 +135,9 @@ main {
 .section-divisor-1 {
     padding: 20px;
     background-color: #f3f3f3;
-    height: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .section-divisor-1-container {
@@ -144,11 +146,26 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .section-divisor-1-container img {
     width: 40px;
     height: auto;
+}
+
+.stack-info {
+    text-align: center;
+}
+
+.rails {
+    color: rgb(241, 15, 15);
+    font-weight: bold;
+}
+
+.javascript {
+    color: #F0DB4F;
+    font-weight: bold;
 }
 
 /* Project section */
