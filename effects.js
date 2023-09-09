@@ -19,3 +19,18 @@ function showProjects() {
 }
 
 window.addEventListener('scroll', showProjects);
+
+//Dropdown menu
+var dropdown = document.querySelector('.dropdown-menu');
+function toggleDropdown() {
+    if (dropdown.style.display == 'none') {
+        dropdown.style.display = 'block';
+    } else {
+        dropdown.style.display = 'none';
+    }
+}
+
+
+
+
+

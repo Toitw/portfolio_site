@@ -29,6 +29,33 @@ header img {
     filter: invert(1);
 }
 
+.menu:hover {
+    cursor: pointer;
+}
+
+/* Nav */
+
+.dropdown-menu {
+    display: none;
+    margin: 0;
+    position: absolute;
+    z-index: 5;
+    padding: 20px 0 20px 50px;
+    width: 100%;
+    background-color: black;
+    font-family: 'roboto', sans-serif;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
 /* Hero call */
 .hero-call {
     background-color: black;
@@ -176,3 +203,59 @@ main {
     background-color: #ececec;
     border: none;
 }
+
+/* Contact me section */
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+.contact-me h2 {
+    margin-bottom: 20px;
+    color: white;
+}   
+
+.contact-me p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-me button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 31.5rem;
+    margin: 20px 0;
+    width: 50%;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact-me button:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+

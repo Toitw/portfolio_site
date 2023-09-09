@@ -9,9 +9,15 @@
 <body>
     <header>
             <img class="logo" src="resources/logo.png" alt="Logo">
-            <img class="menu" src="resources/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu">
+            <a href="javascript:void(0);" onclick="toggleDropdown(); return false;"><img class="menu" src="resources/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu"></a>
     </header>
-
+    <nav>
+        <ul class="dropdown-menu">
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact me</a></li>
+        </ul>
+    </nav>
     <section class="hero-call">
         <div class="top-hero-call-container">
             <div class="portrait">
@@ -30,12 +36,15 @@
     </section>
 
     <main>
-        <div class="section-divisor-1">
+        <div id="stack" class="section-divisor-1">
             <div class="section-divisor-1-container">
                     <img src="resources/github-mark.svg" alt="Github">
                     <img src="resources/javascript-39404.png" alt="Javascript">
                     <img src="resources/ruby.png" alt="Ruby">
                     <img src="resources/Postgresql_elephant.svg" alt="Ruby on Rails">
+            </div>
+            <div class="stack-info">
+                <p>I'm a full stack developer with experience working with Ruby on rails and Javascript. I have also experience with SQL, MySQL and Postgresql.</p>
             </div>
         </div>
         <div class="project-section">
@@ -64,17 +73,15 @@
         <div class="contact-me-text">
             <h2>Contact me</h2>
         </div>
-        <button>Send me an email</button>
+        <button onclick="location.href='mailto:juanjrgast@gmail.com'">Send me an email</button>
     </section>
 
     <footer>
         <div class="footer-text">
-            <p>© 2020 Juroga</p>
+            <p>© 2023 Juroga</p>
         </div>
         <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
+            <a href="mailto:juanjrgast@gmail.com">juanjrgast@gmail.com</a>
         </div>
     </footer>
 
