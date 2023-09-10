@@ -14,23 +14,22 @@ header {
     height: 80px;
 }
 
-header img {
-    height: 50px;
-}
 
 .logo {
-    width: 50%;
+    max-width: 40%;
     height: auto;
 }
 
 .menu {
-    width: 30px;
+    min-width: 30px;
     height: auto;
     filter: invert(1);
+    padding: 12px;
 }
 
 .menu:hover {
     cursor: pointer;
+    background-color: #F0DB4F;
 }
 
 /* Nav */
@@ -46,6 +45,10 @@ header img {
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 2s, transform 3s;
+}
+
+.dropdown-menu-big-screen {
+    display: none;
 }
 
 .dropdown-menu.show {
@@ -71,6 +74,44 @@ header img {
     color: orange;
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 700px) {
+    .dropdown-menu-big-screen {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+        opacity: 1;
+        transform: translateY(0);
+        gap: 30px;
+        height: auto;
+    }
+
+    .dropdown-menu-big-screen li {
+        margin: 0;
+    }
+
+    .dropdown-menu-big-screen li a {
+        color: white;
+        text-decoration: none;
+        font-family: 'roboto', sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .dropdown-menu-big-screen li a:hover {
+        color: orange;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu {
+        display: none;
+    }
 }
 
 /* Hero call */
@@ -145,6 +186,29 @@ header img {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (min-width: 700px) {
+    .top-hero-call-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .portrait {
+        margin: 40px 0 50px 50px;
+    }
+
+    .hero-text {
+        width: 60%;
+        margin: 40px 50px 50px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 4vw;
+    }
+}
+    
 
 /* Main */
 main {
