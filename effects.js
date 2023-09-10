@@ -21,13 +21,23 @@ function showProjects() {
 window.addEventListener('scroll', showProjects);
 
 //Dropdown menu
+// var dropdown = document.querySelector('.dropdown-menu');
+// function toggleDropdown() {
+//     if (dropdown.style.display == 'none') {
+//         dropdown.style.display = 'block';
+//     } else {
+//         dropdown.style.display = 'none';
+//     }
+// }
+
 var dropdown = document.querySelector('.dropdown-menu');
+
 function toggleDropdown() {
-    if (dropdown.style.display == 'none') {
-        dropdown.style.display = 'block';
-    } else {
-        dropdown.style.display = 'none';
-    }
+  if (dropdown.classList.contains('show')) {
+    dropdown.classList.remove('show');
+  } else {
+    dropdown.classList.add('show');
+  }
 }
 
 
