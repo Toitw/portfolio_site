@@ -258,6 +258,8 @@ header {
 /* Main */
 main {
     margin-bottom: 25px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .section-divisor-1 {
@@ -271,7 +273,7 @@ main {
 .section-divisor-1-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
@@ -284,18 +286,36 @@ main {
 
 .stack-info {
     text-align: center;
+    padding: 0 8px;
 }
 
 .rails {
     color: rgb(241, 15, 15);
     font-weight: bold;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .javascript {
     color: #F0DB4F;
     font-weight: bold;
     background-color: black;
+}
+
+@media screen and (min-width: 700px) {
+    .section-divisor-1 {
+        padding: 50px;
+        gap: 50px;
+    }
+    
+    .section-divisor-1-container img {
+        width: 5%;
+        height: auto;
+    }
+
+    .stack-info {
+        font-size: 1.5vw;
+
+    }
 }
 
 /* Project section */
@@ -314,6 +334,13 @@ main {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
 
 .project.show {
@@ -324,7 +351,12 @@ main {
 .project img {
     width: 80%;
     height: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
+.project:hover {
+    transform: scale(1.1);
+  }
 
 .project h3 {
     margin-top: 20px;
@@ -349,6 +381,32 @@ main {
 .more-button:hover {
     background-color: #ececec;
     border: none;
+}
+
+@media screen and (min-width: 700px) {
+    .project-section {
+        padding: 50px 80px 0 80px;
+    }
+
+    .project-section-title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .project img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .project {
+        margin-bottom: 60px;
+    }
+
+    .more-button {
+        font-size: 1.5rem;
+        padding: 20px 40px;
+        margin: 30px;
+    }
 }
 
 /* Contact me section */
