@@ -18,6 +18,7 @@ header {
 .logo {
     max-width: 40%;
     height: auto;
+    max-height: 80px;
 }
 
 .menu {
@@ -112,6 +113,25 @@ header {
     .menu {
         display: none;
     }
+
+    header {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 150px 0 150px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .dropdown-menu-big-screen li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    }
 }
 
 /* Hero call */
@@ -121,7 +141,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px 20px 20px;
+    padding: 0 80px 20px 80px;
 }
 
 .top-hero-call-container {
@@ -196,16 +216,41 @@ header {
     }
 
     .portrait {
-        margin: 40px 0 50px 50px;
+        margin: 50px 100px 50px 100px;
     }
 
     .hero-text {
-        width: 60%;
+        width: 100%;
         margin: 40px 50px 50px 0;
     }
 
     .hero-text h1 {
         font-size: 4vw;
+    }
+
+    .hero-call {
+        padding: 0 120px 50px 120px;
+    }
+
+    .hero-call .hero-sub-text {
+    font-size: 1vw;
+    color: grey;
+    text-align: center;
+    }
+
+    .hero-call button {
+        width: 25%;
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+        margin: 50px 50px;
+    }
+
+    .contact-button {
+        background-color: transparent;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
     }
 }
     
