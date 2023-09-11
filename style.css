@@ -257,7 +257,7 @@ header {
 
 /* Main */
 main {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -319,52 +319,46 @@ main {
 }
 
 /* Project section */
+.hidden {
+    display: none;
+}
+
 .project-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
 }
 
-.project {
+.project-container {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    padding: 10px 20px;
+  }
+  
+.project a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 35px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    transition: transform 0.3s ease-in-out;
-}
-
-.project a {
+    justify-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #f3f3f3;
     text-decoration: none;
-    color: black;
-    text-align: center;
 }
-
-.project.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+  
 .project img {
-    width: 80%;
-    height: auto;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+max-width: 100%;
+height: auto;
+}
+
+.project_title, .project_description {
+    color: black;
 }
 
 .project:hover {
-    transform: scale(1.1);
-  }
-
-.project h3 {
-    margin-top: 20px;
-}
-
-.project p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .more-button {
@@ -374,7 +368,8 @@ main {
     text-decoration: none;
     color: black;
     border: solid 1px black;
-    padding: 10px 20px;
+    padding: 20px 40px;
+    margin: 30px;
     border-radius: 31.25rem;
 }
 
@@ -384,6 +379,10 @@ main {
 }
 
 @media screen and (min-width: 700px) {
+    .more-button {
+        display: none;
+    }
+
     .project-section {
         padding: 50px 80px 0 80px;
     }
@@ -394,8 +393,9 @@ main {
     }
 
     .project img {
-        max-width: 50%;
+        width: 100%;
         height: auto;
+        min-height: 277px;
     }
 
     .project {

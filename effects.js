@@ -40,6 +40,17 @@ function toggleDropdown() {
   }
 }
 
+const moreButton = document.querySelector('.more-button');
+const hiddenProjects = document.querySelectorAll('.project.hidden');
+
+moreButton.addEventListener('click', () => {
+  event.preventDefault();
+  hiddenProjects.forEach(project => {
+    project.classList.remove('hidden');
+  });
+  moreButton.style.display = 'none';
+});
+
 
 
 
