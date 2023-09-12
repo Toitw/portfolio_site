@@ -166,8 +166,8 @@ header {
 
 #typewriter .cursor {
     display: inline-block;
-    width: 0.3em;
-    height: 0.6em;
+    width: 0.2em;
+    height: 0.8em;
     background-color: white;
     animation: blink 1s infinite;
   }
@@ -180,7 +180,7 @@ header {
 
 .hero-call .hero-sub-text {
     font-size: 0.8rem;
-    color: grey;
+    color: rgb(187, 182, 182);
     text-align: center;
 }
 
@@ -200,12 +200,14 @@ header {
 .hero-call button {
     background-color: orange;
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 31.5rem;
-    margin: 20px 0;
-    width: 50%;
     text-decoration: none;
+    width: auto;
+    min-width: 150px;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    margin: 50px;
 }
 
 .contact-button {
@@ -248,14 +250,13 @@ header {
 
     .hero-call .hero-sub-text {
     font-size: 1vw;
-    color: grey;
     text-align: center;
     }
 
     .hero-call button {
-        width: 25%;
-        padding: 0.5rem 1rem;
-        font-size: 2rem;
+        width: auto;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
         margin: 50px 50px;
     }
 
@@ -421,6 +422,10 @@ box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
         padding: 20px 40px;
         margin: 30px;
     }
+
+    .hidden {
+        display: block;
+    }
 }
 
 /* Contact me section */
@@ -445,11 +450,12 @@ box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 .contact-me button {
     background-color: orange;
     color: white;
-    padding: 10px 20px;
+    padding: 0.8rem;
     border: none;
     border-radius: 31.5rem;
     margin: 20px 0;
-    width: 50%;
+    width: auto;
+    min-width: 100px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
@@ -461,13 +467,32 @@ box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 700px) {
+    .contact-me {
+        padding: 50px 80px 0 80px;
+    }
+
+    .contact-me h2 {
+        font-size: 3rem;
+    }
+
+    .contact-me button {
+        width: auto;
+        min-width: 200px;
+        padding: 0.8rem;
+        font-size: 1.5rem;
+        margin: 50px 50px;
+    }
+}
+    
+
 /* Footer */
 
 footer {
     background-color: black;
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: right;
 }
 
 footer a {

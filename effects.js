@@ -70,7 +70,7 @@ function type() {
     typewriter.appendChild(span);
     typewriter.appendChild(document.createTextNode(' '));
     index++;
-    setTimeout(type, 300);
+    setTimeout(type, 200);
   } else {
     const cursor = document.createElement('span');
     cursor.classList.add('cursor');
