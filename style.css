@@ -164,6 +164,20 @@ header {
     color: white;
 }
 
+#typewriter .cursor {
+    display: inline-block;
+    width: 0.3em;
+    height: 0.6em;
+    background-color: white;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
 .hero-call .hero-sub-text {
     font-size: 0.8rem;
     color: grey;

@@ -51,7 +51,34 @@ moreButton.addEventListener('click', () => {
   moreButton.style.display = 'none';
 });
 
+//Typewriter animation
+const typewriter = document.querySelector('#typewriter');
+const text = typewriter.textContent;
+const words = text.split(' ');
+let index = 0;
 
+typewriter.textContent = '';
+
+function type() {
+  if (index < words.length) {
+    const word = words[index];
+    const span = document.createElement('span');
+    span.textContent = word;
+    if (word === 'full' || word === 'stack') {
+      span.classList.add('highlight');
+    }
+    typewriter.appendChild(span);
+    typewriter.appendChild(document.createTextNode(' '));
+    index++;
+    setTimeout(type, 300);
+  } else {
+    const cursor = document.createElement('span');
+    cursor.classList.add('cursor');
+    typewriter.appendChild(cursor);
+  }
+}
+
+type();
 
 
 
